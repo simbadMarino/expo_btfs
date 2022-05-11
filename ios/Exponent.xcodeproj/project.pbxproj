@@ -28,7 +28,6 @@
 		2197FFB523C613A9003CA3B2 /* RNSharedElementContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2197FFB323C613A9003CA3B2 /* RNSharedElementContent.m */; };
 		2519CCFC216B292600FA7C80 /* EXUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519CCFB216B292600FA7C80 /* EXUserNotificationCenter.m */; };
 		2520E83A21ABEEF100D900A4 /* EXScopedFilePermissionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2520E83921ABEEF100D900A4 /* EXScopedFilePermissionModule.m */; };
-		254282F6B824A72BCE19E8D8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73635417C6851995A8B869A4 /* ExpoModulesProvider.swift */; };
 		255A630A2154FB89009FDFC6 /* EXPendingNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 255A63092154FB88009FDFC6 /* EXPendingNotification.m */; };
 		25742BE72174B8BE003E7453 /* EXExpoUserNotificationCenterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25742BE62174B8BE003E7453 /* EXExpoUserNotificationCenterProxy.m */; };
 		25742BF121774212003E7453 /* EXNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 25742BEF21774212003E7453 /* EXNotifications.m */; };
@@ -973,7 +972,6 @@
 		7043DF742283303800272D74 /* RNSVGNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSVGNode.m; sourceTree = "<group>"; };
 		7043DF752283303800272D74 /* RNSVGContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSVGContainer.h; sourceTree = "<group>"; };
 		731D1E5D176247F4893297CE /* RNSVGMarker.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; path = RNSVGMarker.h; sourceTree = "<group>"; };
-		73635417C6851995A8B869A4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Tests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		780F0BF062134A048B33344C /* RNSharedElementCornerRadii.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = RNSharedElementCornerRadii.m; sourceTree = "<group>"; };
 		78CEE2C01ACD07D70095B124 /* Expo Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expo Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CEE2D01ACD07D70095B124 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1210,6 +1208,7 @@
 		E307EED1B62C455182DBF80B /* RNSharedElementTransitionItem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; path = RNSharedElementTransitionItem.h; sourceTree = "<group>"; };
 		E37EA5BB197945508A6A14F0 /* RNCPickerLabel.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = RNCPickerLabel.m; sourceTree = "<group>"; };
 		E3D76D11068A74897B9A37EC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E65596C0B2EF98B667BB1CC5 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Expo Go-Tests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		EC7E234A4A564DFE84B2B1D0 /* RNCSlider.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = RNCSlider.m; sourceTree = "<group>"; };
 		EE5757442E5343FAAC728C45 /* RNCMaskedView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; path = RNCMaskedView.h; sourceTree = "<group>"; };
 		F10869892448B11D00B7DC04 /* EXDevMenuMotionInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXDevMenuMotionInterceptor.h; sourceTree = "<group>"; };
@@ -1735,22 +1734,13 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
-		78FC17D1421550B82AA58084 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				73635417C6851995A8B869A4 /* ExpoModulesProvider.swift */,
-				BC1176CBDAE28AEA9DDFE49A /* ExpoModulesProvider.swift */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
 		994130004C859A4758AD583C /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
 				344E183534ED1467E47B0E35 /* Expo Go (unversioned) */,
 				F2F4B300B300F7E0685B5A6A /* Expo Go (versioned) */,
 				EC27866F78F13D1263CDAAB8 /* ExponentIntegrationTests */,
-				78FC17D1421550B82AA58084 /* Tests */,
+				D36369AA9549D7E0DF93F252 /* Tests */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -2397,6 +2387,14 @@
 				BBD03192200011C9009F0434 /* RNAWSCognito.m */,
 			);
 			path = Cognito;
+			sourceTree = "<group>";
+		};
+		D36369AA9549D7E0DF93F252 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E65596C0B2EF98B667BB1CC5 /* ExpoModulesProvider.swift */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		E3BD4F6E1BF543B697AFB794 /* DateTimePicker */ = {
@@ -3274,7 +3272,6 @@
 				B5854ED920D0790C001D2F6E /* EXDevDetachTestCase.m in Sources */,
 				B5854EEB20D07D4D001D2F6E /* EXLinkingTests.m in Sources */,
 				B5FABDF420DD920600642528 /* EXAppLoaderConfigurationTestsProdService.m in Sources */,
-				254282F6B824A72BCE19E8D8 /* ExpoModulesProvider.swift in Sources */,
 				1AFFCC1AE264EA3954D91AE2 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

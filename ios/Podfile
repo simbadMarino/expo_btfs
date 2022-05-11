@@ -30,15 +30,6 @@ abstract_target 'Expo Go' do
       'expo-dev-launcher',
       'expo-dev-client'
     ],
-    # Modules for which to include Tests subspec
-    tests: [
-      'expo-eas-client',
-      'expo-modules-core',
-      'expo-updates',
-      'expo-manifests',
-      'expo-json-utils',
-      'expo-structured-headers',
-    ],
     flags: {
       :inhibit_warnings => false
     }
