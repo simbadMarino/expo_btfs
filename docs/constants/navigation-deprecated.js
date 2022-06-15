@@ -350,6 +350,17 @@ const featurePreview = [
     ],
     { expanded: true }
   ),
+  makeSection(
+    'EAS Metadata',
+    [
+      makeGroup('EAS Metadata', [
+        makePage('eas-metadata/introduction.md'),
+        makePage('eas-metadata/getting-started.md'),
+        makePage('eas-metadata/store-json.md'),
+      ]),
+    ],
+    { expanded: true }
+  ),
 ];
 
 const reference = VERSIONS.reduce(
