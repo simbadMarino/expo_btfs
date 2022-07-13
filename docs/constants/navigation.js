@@ -17,8 +17,6 @@ const startingDirectories = ['introduction', 'get-started', 'tutorial', 'next-st
 const easDirectories = ['eas', 'build', 'app-signing', 'build-reference', 'submit'];
 /** Private preview section which isn't linked in the documentation */
 const previewDirectories = ['preview'];
-/** Public preview section which is linked under `Feature Preview` */
-const featurePreviewDirectories = ['feature-preview', 'development', 'eas-update'];
 /** All other unlisted directories */
 const generalDirectories = fs
   .readdirSync(PAGES_DIR, { withFileTypes: true })
@@ -28,12 +26,7 @@ const generalDirectories = fs
     name =>
       name !== 'api' &&
       name !== 'versions' &&
-      ![
-        ...startingDirectories,
-        ...previewDirectories,
-        ...featurePreviewDirectories,
-        ...easDirectories,
-      ].includes(name)
+      ![...startingDirectories, ...previewDirectories, ...easDirectories].includes(name)
   );
 
 // --- Navigation ---
@@ -358,7 +351,6 @@ module.exports = {
   startingDirectories,
   previewDirectories,
   easDirectories,
-  featurePreviewDirectories,
 };
 
 // --- MDX methods ---
