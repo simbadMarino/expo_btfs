@@ -288,17 +288,6 @@ const eas = [
     ],
     { expanded: true }
   ),
-];
-
-const preview = [
-  makeSection('Preview', [
-    makePage('preview/introduction.md'),
-    makePage('preview/support.md'),
-    { expanded: true },
-  ]),
-];
-
-const featurePreview = [
   makeSection(
     'EAS Update',
     [
@@ -323,6 +312,16 @@ const featurePreview = [
     { expanded: true }
   ),
 ];
+
+const preview = [
+  makeSection('Preview', [
+    makePage('preview/introduction.md'),
+    makePage('preview/support.md'),
+    { expanded: true },
+  ]),
+];
+
+const featurePreview = [];
 
 const reference = VERSIONS.reduce(
   (all, version) => ({

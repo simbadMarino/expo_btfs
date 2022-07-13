@@ -14,7 +14,7 @@ const PAGES_DIR = path.resolve(__dirname, '../pages');
 /** Manual list of directories to pull in to the getting started tutorial */
 const startingDirectories = ['introduction', 'get-started', 'tutorial', 'next-steps'];
 /** Manual list of directories to categorize as "EAS content" */
-const easDirectories = ['eas', 'build', 'app-signing', 'build-reference', 'submit'];
+const easDirectories = ['eas', 'build', 'app-signing', 'build-reference', 'submit', 'eas-update'];
 /** Private preview section which isn't linked in the documentation */
 const previewDirectories = ['preview'];
 /** All other unlisted directories */
@@ -308,15 +308,6 @@ const eas = [
     ],
     { expanded: true }
   ),
-];
-
-const preview = [
-  makeSection('Preview', [
-    makeGroup('Preview', [makePage('preview/introduction.md'), makePage('preview/support.md')]),
-  ]),
-];
-
-const featurePreview = [
   makeSection(
     'EAS Update',
     [
@@ -343,6 +334,14 @@ const featurePreview = [
     { expanded: true }
   ),
 ];
+
+const preview = [
+  makeSection('Preview', [
+    makeGroup('Preview', [makePage('preview/introduction.md'), makePage('preview/support.md')]),
+  ]),
+];
+
+const featurePreview = [];
 
 const reference = VERSIONS.reduce(
   (all, version) => ({
