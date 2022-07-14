@@ -126,7 +126,7 @@ When we built our Android app bundle above, we told it to point to a specific An
 
 <Video file="exploring-managed/updatechannel.mp4" />
 
-To determine the rules for when apps will download and apply these updates, [read about configuring updates](../guides/configuring-updates.md).
+To determine the rules for when apps will download and apply these updates, [read about configuring updates](/archive/classic-updates/configuring-updates.md).
 
 We frequently release updates to the [Expo SDK](/versions/latest/). If you decide to update your app to a newer version of our SDK, copies of the older version will continue to work fine. Users will download the newest copy that their client supports.
 

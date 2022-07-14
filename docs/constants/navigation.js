@@ -142,7 +142,6 @@ const general = [
     makePage('guides/userinterface.md'),
     makePage('guides/preloading-and-caching-assets.md'),
     makePage('guides/environment-variables.md'),
-    makePage('guides/configuring-updates.md'),
     makePage('guides/customizing-metro.md'),
     makePage('guides/customizing-webpack.md'),
     makePage('guides/offline-support.md'),

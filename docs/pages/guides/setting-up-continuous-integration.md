@@ -411,10 +411,9 @@ Here are some extra links that might help you further.
 
 ### Useful subjects
 
-- [Release channels](/distribution/release-channels.md)
 - [Creating your first build](/build/setup.md)
 - [Triggering builds from CI](/build/building-on-ci.md)
-- [Configuring Updates](configuring-updates.md)
+- [Configuring EAS Update](/eas-update/getting-started.md)
 
 ### Official documentation CI/CD vendors
 

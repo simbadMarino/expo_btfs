@@ -219,7 +219,8 @@ const RENAMED_PAGES: Record<string, string> = {
   '/versions/latest/sdk/permissions/': '/guides/permissions/',
 
   // updates
-  '/guides/configuring-ota-updates/': '/guides/configuring-updates/',
+  '/guides/configuring-ota-updates/': '/eas-update/getting-started/',
+  '/guides/configuring-updates/': '/eas-update/getting-started/',
 
   // Redirect Gatsby guide to index guides page
   '/guides/using-gatsby/': '/guides/',
