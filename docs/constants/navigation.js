@@ -111,7 +111,6 @@ const general = [
     makePage('distribution/uploading-apps.md'),
     makePage('distribution/app-transfers.md'),
     makePage('distribution/security.md'),
-    makePage('distribution/optimizing-updates.md'),
     makePage('distribution/publishing-websites.md'),
   ]),
   makeSection('Development Builds', [

@@ -70,12 +70,6 @@ You can easily build your app for submission to stores without even installing X
 
 </Collapsible>
 
-<Collapsible summary="Updates (JS and assets) for updates and builds are size-limited">
-
-Expo's current update service supports updates around 50 MiB. Updates are published both for updates and to build standalone apps, which embed updates. See more about [optimizing updates](../distribution/optimizing-updates.md).
-
-You also can use the [bare workflow](/bare/exploring-bare-workflow.md) with the [`expo-updates`](/versions/latest/sdk/updates.md) library, which supports arbitrarily large updates that are self-hosted or embedded in apps compiled on your own computer.
-
 </Collapsible>
 
 <Collapsible summary="Your app cannot target only children under 13 years old without customizing native dependencies">
