@@ -106,7 +106,6 @@ const general = [
   makeSection('Distributing Your App', [
     makePage('distribution/introduction.md'),
     makePage('distribution/app-stores.md'),
-    makePage('distribution/advanced-release-channels.md'),
     makePage('distribution/runtime-versions.md'),
     makePage('distribution/hosting-your-app.md'),
     makePage('distribution/uploading-apps.md'),

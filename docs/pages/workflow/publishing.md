@@ -45,7 +45,7 @@ open it.
 
 ## What version of the app will my users get?
 
-Your users will get the most recent compatible release that was pushed to a [release channel](../distribution/release-channels.md). Factors that affect compatibility:
+Your users will get the most recent compatible release that was pushed to a [release channel](/archive/classic-updates/release-channels.md). Factors that affect compatibility:
 
 - sdkVersion (standalone apps are built to support only a single SDK version)
 - platform
@@ -54,9 +54,9 @@ Your users will get the most recent compatible release that was pushed to a [rel
 The following flowchart shows how we determine which release to return to a user:
 
 <ImageSpotlight
-  alt="Serving Flowchart"
-  src="/static/images/release-channels-flowchart.png"
-  style={{ maxWidth: 600 }}
+alt="Serving Flowchart"
+src="/static/images/release-channels-flowchart.png"
+style={{ maxWidth: 600 }}
 />
 
 ## Deploying to the App Store and Play Store
@@ -118,4 +118,4 @@ them. Public projects might be surfaced to other developers.
 
 The default [privacy setting](../workflow/configuration.md) for managed apps is `unlisted` so nobody can find your app unless you share the link with them.
 
-If you really want your published app to be 'unpublished', check out our guide on [Advanced Release Channels](../distribution/advanced-release-channels.md), which explains how to roll back.
+If you really want your published app to be 'unpublished', check out our guide on [Advanced Release Channels](/archive/classic-updates/advanced-release-channels), which explains how to roll back.

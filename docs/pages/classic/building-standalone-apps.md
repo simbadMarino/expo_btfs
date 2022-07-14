@@ -60,7 +60,7 @@ There are other options you can add to **app.json**. For example, some developer
 
 To start the build process, run `expo build:android` or `expo build:ios` depending on the platform you are building for. If there is no development server running for the app you are building, `expo` will start it automatically.
 
-> When you run `expo build`, Expo automatically publishes your app (with `expo publish`). To avoid accidentally publishing changes to your production app, you may want to use [release channels](/distribution/release-channels).
+> When you run `expo build`, Expo automatically publishes your app (with `expo publish`). To avoid accidentally publishing changes to your production app, you may want to use [release channels](/archive/classic-updates/release-channels).
 
 ### Building for Android
 

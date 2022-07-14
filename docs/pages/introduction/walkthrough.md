@@ -122,7 +122,7 @@ Once your app is out for testing or on the stores you probably don’t want to h
 
 <Video file="exploring-managed/update.mp4" />
 
-When we built our Android app bundle above, we told it to point to a specific Android release channel ([learn more about release channels](../distribution/release-channels.md)). To publish an update to the Android app we then need to update that release channel too.
+When we built our Android app bundle above, we told it to point to a specific Android release channel ([learn more about release channels](/archive/classic-updates/release-channels.md)). To publish an update to the Android app we then need to update that release channel too.
 
 <Video file="exploring-managed/updatechannel.mp4" />
 
