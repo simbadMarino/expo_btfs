@@ -349,12 +349,21 @@ const preview = [
 ];
 
 const archive = [
-  makeSection('Archive', [makeGroup('Archive', [makePage('archive/introduction.md')])], {
+  makeSection('Archive', [makeGroup('Archive', [makePage('archive/index.md')])], {
     expanded: true,
   }),
   makeSection(
     'Classic Updates',
-    [makeGroup('Classic Updates', [makePage('archive/classic-updates/release-channels.md')])],
+    [
+      makeGroup('Classic Updates', [makePage('archive/classic-updates/introduction.md')]),
+      makeGroup('Distribution', [
+        makePage('archive/classic-updates/release-channels.md'),
+        makePage('archive/classic-updates/advanced-release-channels.md'),
+        makePage('archive/classic-updates/hosting-your-app.md'),
+        makePage('archive/classic-updates/optimizing-updates.md'),
+      ]),
+      makeGroup('Workflow', [makePage('archive/classic-updates/publishing.md')]),
+    ],
     {
       expanded: true,
     }
