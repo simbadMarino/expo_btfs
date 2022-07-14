@@ -356,6 +356,7 @@ const archive = [
     'Classic Updates',
     [
       makeGroup('Classic Updates', [makePage('archive/classic-updates/introduction.md')]),
+      makeGroup('Guides', [makePage('archive/classic-updates/configuring-updates.md')]),
       makeGroup('Distribution', [
         makePage('archive/classic-updates/release-channels.md'),
         makePage('archive/classic-updates/advanced-release-channels.md'),
@@ -363,6 +364,7 @@ const archive = [
         makePage('archive/classic-updates/optimizing-updates.md'),
       ]),
       makeGroup('Workflow', [makePage('archive/classic-updates/publishing.md')]),
+      makeGroup('Bare Workflow', [makePage('archive/classic-updates/updating-your-app.md')]),
     ],
     {
       expanded: true,

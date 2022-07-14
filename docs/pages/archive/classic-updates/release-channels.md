@@ -29,7 +29,7 @@ A release channel name can only contain lowercase letters, numbers and special c
 
 ## Build with release channels
 
-[Set your release channel](/build/updates.md) in the build profile in **eas.json**:
+Set your release channel in the build profile in **eas.json**:
 
 ```json
 {
@@ -98,7 +98,7 @@ You can continue updating v1 of your app with `expo publish --release-channel pr
 
 ## Using release channels in the bare workflow
 
-You can edit the native project's release channel by modifying the `EXUpdatesReleaseChannel` key in **Expo.plist** (iOS) or the `releaseChannel` meta-data tag value in **AndroidManifest.xml** (Android). [Read this guide](/bare/updating-your-app.md) for more information on configuring updates in a bare app.
+You can edit the native project's release channel by modifying the `EXUpdatesReleaseChannel` key in **Expo.plist** (iOS) or the `releaseChannel` meta-data tag value in **AndroidManifest.xml** (Android). [Read this guide](./updating-your-app) for more information on configuring updates in a bare app.
 
 ## Using release channels for Environment Variable Configuration
 

@@ -1,10 +1,8 @@
 ---
-title: Using expo-updates
+title: Using EAS Update
 ---
 
-> This guide references Classic Updates service. As of August 2022, we released the next generation of our updates service: EAS Update. [Learn more](/eas-update).
-
-EAS Build includes some special affordances for Expo's [`expo-updates`](/versions/latest/sdk/updates.md) library. In particular, you can configure the release channel in **eas.json** and EAS Build will take care of updating it in your native project at build time. Not sure what a release channel is? [Learn more about release channels](/distribution/release-channels.md). This document covers concerns specific to using `expo-updates` with EAS Build; for more general information about configuring `expo-updates`, refer to the ["Configuring Updates" guide](/guides/configuring-updates.md).
+EAS Build includes some special affordances for Expo's [`expo-updates`](/versions/latest/sdk/updates.md) library. In particular, you can configure the `channel` property in **eas.json** and EAS Build will take care of updating it in your native project at build time. Not sure what a channel is? [Learn more about channels](eas-update/how-eas-update-works/#distributing-builds). This document covers concerns specific to using `expo-updates` with EAS Build; for more general information about configuring `expo-updates`, refer to the ["Configuring Updates" guide](/guides/configuring-updates.md).
 
 ## Setting the release channel for a build profile
 
