@@ -179,7 +179,7 @@ const RENAMED_PAGES: Record<string, string> = {
 
   // Additional redirects based on Sentry (04/28/2020)
   '/next-steps/installation/': '/get-started/installation/',
-  '/guides/release-channels/': '/distribution/release-channels/',
+  '/guides/release-channels/': '/archive/classic-updates/release-channels/',
 
   // Redirects based on Next 9 upgrade (09/11/2020)
   '/api/': '/versions/latest/',

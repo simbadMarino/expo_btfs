@@ -106,7 +106,6 @@ const general = [
   makeSection('Distributing Your App', [
     makePage('distribution/introduction.md'),
     makePage('distribution/app-stores.md'),
-    makePage('distribution/release-channels.md'),
     makePage('distribution/advanced-release-channels.md'),
     makePage('distribution/runtime-versions.md'),
     makePage('distribution/hosting-your-app.md'),
@@ -144,7 +143,6 @@ const general = [
     makePage('guides/environment-variables.md'),
     makePage('guides/customizing-metro.md'),
     makePage('guides/customizing-webpack.md'),
-    makePage('guides/offline-support.md'),
     makePage('guides/progressive-web-apps.md'),
     makePage('guides/web-performance.md'),
     makePage('guides/delaying-code.md'),
