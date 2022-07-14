@@ -101,6 +101,7 @@ module.exports = {
         ...navigation.startingDirectories,
         ...navigation.generalDirectories,
         ...navigation.easDirectories,
+        ...navigation.archive,
         ...VERSIONS.map(version => `versions/${version}`),
       ],
       // Some of our pages are "hidden" and should not be added to the sitemap

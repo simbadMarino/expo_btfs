@@ -122,6 +122,10 @@ class DocumentationPageWithApiVersion extends React.Component<Props, State> {
     return this.props.router.pathname.startsWith('/versions');
   };
 
+  private isArchivePath = () => {
+    return this.props.router.pathname.startsWith('/archive');
+  };
+
   private isGeneralPath = () => {
     return some(navigation.generalDirectories, name =>
       this.props.router.pathname.startsWith(`/${name}`)
@@ -195,6 +199,8 @@ class DocumentationPageWithApiVersion extends React.Component<Props, State> {
       return 'preview';
     } else if (this.isEasPath()) {
       return 'eas';
+    } else if (this.isArchivePath()) {
+      return 'archive';
     }
 
     return 'general';

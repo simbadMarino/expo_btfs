@@ -15,6 +15,8 @@ const PAGES_DIR = path.resolve(__dirname, '../pages');
 const startingDirectories = ['introduction', 'get-started', 'tutorial', 'next-steps'];
 /** Manual list of directories to categorize as "EAS content" */
 const easDirectories = ['eas', 'build', 'app-signing', 'build-reference', 'submit', 'eas-update'];
+/** Manual list of directories to categorize as "Archive" */
+const archiveDirectores = ['archive'];
 /** Private preview section which isn't linked in the documentation */
 const previewDirectories = ['preview'];
 /** All other unlisted directories */
@@ -26,7 +28,12 @@ const generalDirectories = fs
     name =>
       name !== 'api' &&
       name !== 'versions' &&
-      ![...startingDirectories, ...previewDirectories, ...easDirectories].includes(name)
+      ![
+        ...startingDirectories,
+        ...previewDirectories,
+        ...easDirectories,
+        ...archiveDirectores,
+      ].includes(name)
   );
 
 // --- Navigation ---
@@ -341,6 +348,19 @@ const preview = [
   ]),
 ];
 
+const archive = [
+  makeSection('Archive', [makeGroup('Archive', [makePage('archive/introduction.md')])], {
+    expanded: true,
+  }),
+  makeSection(
+    'Classic Updates',
+    [makeGroup('Classic Updates', [makePage('archive/classic-updates/release-channels.md')])],
+    {
+      expanded: true,
+    }
+  ),
+];
+
 const featurePreview = [];
 
 const reference = VERSIONS.reduce(
@@ -375,6 +395,7 @@ module.exports = {
   general,
   eas,
   preview,
+  archive,
   featurePreview,
   /** @type {any} */
   reference: { ...reference, latest: reference[LATEST_VERSION] },
