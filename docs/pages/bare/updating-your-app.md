@@ -103,4 +103,4 @@ Once our project is set up with EAS Update, eventually we'll make native changes
 
 ## Set your own updates service
 
-EAS Update is a great updates service for most projects, however, some projects have unique requirements that make a self-hosted updates service a better solution. Since the expo-updates library is open source and follows the Expo Updates protocol, you can set up a custom server to serve updates to your end-users. [Learn more](/eas-update/custom-updates-server).
+EAS Update is a great updates service for most projects, however, some projects have unique requirements that make a self-hosted updates service a better solution. Since the expo-updates library is open source and follows the Expo Updates protocol, you can set up a custom server to serve updates to your end-users. [Learn more](/distribution/custom-updates-server).

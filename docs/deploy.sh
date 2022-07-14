@@ -125,6 +125,7 @@ redirects[guides/using-gatsby]=guides/
 # Moved classic updates
 redirects[distribution/release-channels]=archive/classic-updates/release-channels
 redirects[distribution/advanced-release-channels]=archive/classic-updates/advanced-release-channels
+redirects[eas-update/custom-updates-server]=distribution/custom-updates-server
 
 echo "::group::[5/6] Add custom redirects"
 for i in "${!redirects[@]}" # iterate over keys

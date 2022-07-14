@@ -68,7 +68,7 @@ This means you're required to publish your app to Expo's servers or host it on y
 Whether you want Expo to host your app, or you'd like to do it yourself, all you need to do is follow the appropriate guide:
 
 - [Publishing an app to Expo's servers](/workflow/publishing.md)
-- [Hosting an app on your own server](/distribution/hosting-your-app.md)
+- [Hosting an app on your own server](/distribution/custom-updates-server.md)
 
 ## Start the build
 
