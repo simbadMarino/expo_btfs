@@ -334,11 +334,11 @@ const archive = [
         makePage('archive/classic-updates/preloading-and-caching-assets.md'),
       ]),
       makeGroup('Distribution', [
+        makePage('archive/classic-updates/release-channels.md'),
         makePage('archive/classic-updates/advanced-release-channels.md'),
         makePage('archive/classic-updates/hosting-your-app.md'),
         makePage('archive/classic-updates/offline-support.md'),
         makePage('archive/classic-updates/optimizing-updates.md'),
-        makePage('archive/classic-updates/release-channels.md'),
       ]),
       makeGroup('Workflow', [makePage('archive/classic-updates/publishing.md')]),
       makeGroup('Bare Workflow', [makePage('archive/classic-updates/updating-your-app.md')]),
