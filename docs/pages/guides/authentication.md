@@ -214,7 +214,7 @@ const discovery = {
 
 const redirectUri = makeRedirectUri({
   /* @info The URI <code>[scheme]://</code> to be used in bare and standalone. If undefined, the <code>scheme</code> property of your app.json or app.config.js will be used instead. */
-  scheme: 'your.app'  
+  scheme: 'your.app'
 /* @end */});
 
 const CLIENT_ID = "CLIENT_ID";
@@ -1758,7 +1758,6 @@ export default function App() {
 
 <Tab>
 
-
 <!-- prettier-ignore -->
 ```tsx
 import * as React from 'react';
@@ -2311,7 +2310,14 @@ Here are a few examples of some common redirect URI patterns you may end up usin
 
 #### Expo Proxy
 
-> `https://auth.expo.io/@yourname/your-app`
+```text
+https://auth.expo.io/@username/app-slug
+
+# Example
+
+https://auth.expo.io/@johnsample/my-app
+
+```
 
 - **Environment:** Development or production projects in Expo Go, or in a standalone build.
 - **Create:** Use `AuthSession.makeRedirectUri({ useProxy: true })` to create this URI.
@@ -2321,9 +2327,15 @@ Here are a few examples of some common redirect URI patterns you may end up usin
 
 #### Published project in the Expo Go app
 
-> `exp://exp.host/@yourname/your-app`
+```text
+exp://u.expo.dev/[project-id]?channel-name=[channel-name]&runtime-version=[runtime-version]
 
-- **Environment:** Production projects that you `expo publish`'d and opened in the Expo Go app.
+# Example
+
+exp://u.expo.dev/F767ADF57-B487-4D8F-9522-85549C39F43F?channel-name=main&runtime-version=exposdk:45.0.0
+```
+
+- **Environment:** Production projects that you `eas update`'d and opened in the Expo Go app.
 - **Create:** Use `AuthSession.makeRedirectUri({ useProxy: false })` to create this URI.
   - The link is constructed from your Expo username and the Expo app name, which are appended to the Expo Go app URI scheme.
   - You could also create this link with using `Linking.makeUrl()` from `expo-linking`.

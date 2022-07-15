@@ -34,6 +34,6 @@ We recommend using a different [runtime version](/distribution/runtime-versions.
 
 Updates published with the `runtimeVersion` field can't be loaded in Expo Go; instead, you should use [expo-dev-client](/clients/introduction.md) to create a development build.
 
-## Environment variables and `expo publish`
+## Environment variables and `eas update`
 
-Environment variables set on the `env` field in build profiles are not available when you run `expo publish`. Learn more in the ["Environment variables and secrets" guide](/build-reference/variables.md).
+Environment variables set on the `env` field in build profiles are not available when you run `eas update`. Learn more about using [environment variables with EAS Update](/eas-update/environment-variables).
