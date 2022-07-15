@@ -14,7 +14,7 @@ To force JS updates to run in the background (rather than synchronously checking
 
 ## Cache your assets after downloading
 
-By default, all of your assets (images, fonts, etc.) are [uploaded to Expo's CDN](assets.md) when you publish updates to your app. Once they're downloaded, you can [cache them](preloading-and-caching-assets.md) so you don't need to download them a second time. If you publish changes, the cache will be invalidated and the changed version will be downloaded.
+By default, all of your assets (images, fonts, etc.) are [uploaded to Expo's CDN](assets.md) when you publish updates to your app. Once they're downloaded, you can [cache them](/archive/classic-updates/preloading-and-caching-assets.md) so you don't need to download them a second time. If you publish changes, the cache will be invalidated and the changed version will be downloaded.
 
 ## Bundle your assets inside your standalone binary
 

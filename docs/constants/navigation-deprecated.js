@@ -133,7 +133,6 @@ const general = [
       makePage('guides/typescript.md'),
       makePage('guides/authentication.md'),
       makePage('guides/userinterface.md'),
-      makePage('guides/preloading-and-caching-assets.md'),
       makePage('guides/environment-variables.md'),
       makePage('guides/customizing-metro.md'),
       makePage('guides/customizing-webpack.md'),
@@ -349,7 +348,10 @@ const archive = [
     'Classic Updates',
     [
       makeGroup('Classic Updates', [makePage('archive/classic-updates/introduction.md')]),
-      makeGroup('Guides', [makePage('archive/classic-updates/configuring-updates.md')]),
+      makeGroup('Guides', [
+        makePage('archive/classic-updates/configuring-updates.md'),
+        makePage('archive/classic-updates/preloading-and-caching-assets.md'),
+      ]),
       makeGroup('Distribution', [
         makePage('archive/classic-updates/advanced-release-channels.md'),
         makePage('archive/classic-updates/hosting-your-app.md'),

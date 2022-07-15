@@ -217,7 +217,7 @@ Read the documentation on [Uploading Apps to the Apple App Store and Google Play
 
 ## 7. Update your app
 
-To update your app, use the command `expo publish` from the Expo CLI. The physical device on which the app is installed will download the new JavaScript update the next time the app is open on that device. To ensure your app users have a seamless experience downloading JavaScript updates, you may want to enable [background JS downloads](/guides/offline-support).
+To update your app, use the command `expo publish` from the Expo CLI. The physical device on which the app is installed will download the new JavaScript update the next time the app is open on that device. To ensure your app users have a seamless experience downloading JavaScript updates, you may want to enable [background JS downloads](/archive/classic-updates/offline-support).
 
 There are a couple of reasons why you might want to rebuild and resubmit the native binaries:
 

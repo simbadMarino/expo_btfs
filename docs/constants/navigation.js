@@ -136,7 +136,6 @@ const general = [
     makePage('guides/typescript.md'),
     makePage('guides/authentication.md'),
     makePage('guides/userinterface.md'),
-    makePage('guides/preloading-and-caching-assets.md'),
     makePage('guides/environment-variables.md'),
     makePage('guides/customizing-metro.md'),
     makePage('guides/customizing-webpack.md'),
