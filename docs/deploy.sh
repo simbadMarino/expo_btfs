@@ -128,6 +128,7 @@ redirects[distribution/advanced-release-channels]=archive/classic-updates/advanc
 redirects[distribution/optimizing-updates]=archive/classic-updates/optimizing-updates
 redirects[eas-update/custom-updates-server]=distribution/custom-updates-server
 redirects[guides/offline-support]=archive/classic-updates/offline-support
+redirects[guides/preloading-and-caching-assets]=archive/classic-updates/preloading-and-caching-assets
 
 echo "::group::[5/6] Add custom redirects"
 for i in "${!redirects[@]}" # iterate over keys
