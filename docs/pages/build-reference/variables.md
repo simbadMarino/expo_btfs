@@ -156,7 +156,7 @@ export default {
 }
 ```
 
-Using this approach, we would always need to remember to run `API_URL=https://api.staging.com ENABLE_HIDDEN_FEATURES=1 expo publish` when updating staging, and something similar for production. If we forgot the `ENABLE_HIDDEN_FEATURES=0` flag when publishing to production, we might end up rolling out untested features to production, and if we forgot the `API_URL` value, then users would be pointed to `https://localhost:3000`!
+Using this approach, we would always need to remember to run `API_URL=https://api.staging.com ENABLE_HIDDEN_FEATURES=1 eas update` when updating staging, and something similar for production. If we forgot the `ENABLE_HIDDEN_FEATURES=0` flag when publishing to production, we might end up rolling out untested features to production, and if we forgot the `API_URL` value, then users would be pointed to `https://localhost:3000`!
 
 The following are two possible alternative approaches, each with different tradeoffs.
 
