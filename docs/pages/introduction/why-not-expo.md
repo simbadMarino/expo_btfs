@@ -70,8 +70,6 @@ You can easily build your app for submission to stores without even installing X
 
 </Collapsible>
 
-</Collapsible>
-
 <Collapsible summary="Your app cannot target only children under 13 years old without customizing native dependencies">
 
 Both [Apple](https://developer.apple.com/app-store/review/guidelines/#kids) and [Google](https://support.google.com/googleplay/android-developer/answer/9285070?hl=en) provide strict guidelines for any apps that specifically target children under a particular age. One of these guidelines states that certain ad libraries, such as Facebook's Audience Network, cannot be used in the app.
