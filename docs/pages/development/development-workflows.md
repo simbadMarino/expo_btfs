@@ -24,7 +24,7 @@ EAS CLI's `eas update` command bundles the current state of your JavaScript and 
 
 When a development build launches, it will expose UI to load a development server, or to "Enter URL manually". You can provide a URL manually that will launch a specific branch. The URL follows this pattern:
 
-```text
+```
 https://u.expo.dev/[your-project-id]?channel-name=[channel-name]
 
 # Example
@@ -44,7 +44,7 @@ You can load your app on a device that has a compatible build of your custom cli
 
 Example:
 
-```text
+```
 exp+app-slug://expo-development=client/?url=https%3A%2F%2Fu.expo.dev%2F767ADF57-B487-4D8F-9522-85549C39F43F%2F%3Fchannel-name%3Dmain
 ```
 

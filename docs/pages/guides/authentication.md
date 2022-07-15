@@ -2310,7 +2310,7 @@ Here are a few examples of some common redirect URI patterns you may end up usin
 
 #### Expo Proxy
 
-```text
+```
 https://auth.expo.io/@username/app-slug
 
 # Example
@@ -2327,7 +2327,7 @@ https://auth.expo.io/@johnsample/my-app
 
 #### Published project in the Expo Go app
 
-```text
+```
 exp://u.expo.dev/[project-id]?channel-name=[channel-name]&runtime-version=[runtime-version]
 
 # Example

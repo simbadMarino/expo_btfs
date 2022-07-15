@@ -59,7 +59,7 @@ For an Android build, add a `<meta-data>` element to the **AndroidManifest.xml**
 
 Yes, if you want to be able to control the runtime version on a platform level, you can:
 
-1. Have platform specific release channels: `ios-production`, `android-production`.
+1. Have platform specific channels: `ios-production`, `android-production`.
 2. Have platform specific runtime versions: `ios-1.0.0`, `android-1.0.0`.
 
 However, you cannot set a platform specific configuration field such as `ios.runtimeVersion` or `android.runtimeVersion`
