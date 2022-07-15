@@ -152,7 +152,8 @@ const RENAMED_PAGES: Record<string, string> = {
   // Lots of old links pointing to guides when they have moved elsewhere
   '/guides/configuration/': '/workflow/configuration/',
   '/guides/expokit/': '/expokit/overview/',
-  '/guides/publishing/': '/workflow/publishing/',
+  '/guides/publishing/': '/archive/classic-updates/publishing/',
+  '/workflow/publishing/': '/archive/classic-updates/publishing/',
   '/guides/linking/': '/workflow/linking/',
   '/guides/up-and-running/': '/get-started/installation/',
   '/guides/debugging/': '/workflow/debugging/',

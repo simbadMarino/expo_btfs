@@ -66,7 +66,7 @@ In a managed app we don’t have the native iOS or Android projects to poke arou
 
 ## Publish and share your app
 
-To share the app with teammates we can run `expo publish` and we’ll build the JavaScript bundle and upload all of the assets to a CDN. [Read more about publishing here](../workflow/publishing.md).
+To share the app with teammates we can run `expo publish` and we’ll build the JavaScript bundle and upload all of the assets to a CDN. [Read more about publishing here](../archive/classic-updates/publishing.md).
 
 <Video file="exploring-managed/publish.mp4" spaceAfter={30} />
 

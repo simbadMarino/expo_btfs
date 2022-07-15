@@ -85,7 +85,6 @@ const general = [
       makePage('workflow/android-studio-emulator.md'),
       makePage('workflow/debugging.md'),
       makePage('workflow/configuration.md'),
-      makePage('workflow/publishing.md'),
       makePage('workflow/upgrading-expo-sdk-walkthrough.md'),
       makePage('workflow/web.md'),
       makePage('workflow/snack.md'),
