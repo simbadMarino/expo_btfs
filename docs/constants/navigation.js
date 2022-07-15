@@ -291,21 +291,23 @@ const eas = [
   makeSection(
     'EAS Update',
     [
-      makePage('eas-update/introduction.md'),
-      makePage('eas-update/getting-started.md'),
-      makePage('eas-update/github-actions.md'),
-      makePage('eas-update/developing-with-eas-update.md'),
-      makePage('eas-update/how-eas-update-works.md'),
-      makePage('eas-update/deployment-patterns.md'),
-      makePage('eas-update/debug-updates.md'),
-      makePage('eas-update/eas-update-and-eas-cli.md'),
-      makePage('eas-update/optimize-assets.md'),
-      makePage('eas-update/migrate-to-eas-update.md'),
-      makePage('eas-update/runtime-versions.md'),
-      makePage('eas-update/environment-variables.md'),
-      makePage('eas-update/expo-dev-client.md'),
-      makePage('eas-update/known-issues.md'),
-      makePage('eas-update/faq.md'),
+      makeGroup('EAS Update', [
+        makePage('eas-update/introduction.md'),
+        makePage('eas-update/getting-started.md'),
+        makePage('eas-update/github-actions.md'),
+        makePage('eas-update/developing-with-eas-update.md'),
+        makePage('eas-update/how-eas-update-works.md'),
+        makePage('eas-update/deployment-patterns.md'),
+        makePage('eas-update/debug-updates.md'),
+        makePage('eas-update/eas-update-and-eas-cli.md'),
+        makePage('eas-update/optimize-assets.md'),
+        makePage('eas-update/migrate-to-eas-update.md'),
+        makePage('eas-update/runtime-versions.md'),
+        makePage('eas-update/environment-variables.md'),
+        makePage('eas-update/expo-dev-client.md'),
+        makePage('eas-update/known-issues.md'),
+        makePage('eas-update/faq.md'),
+      ]),
     ],
     { expanded: true }
   ),
@@ -320,8 +322,31 @@ const preview = [
 ];
 
 const archive = [
-  makeSection('Archive', [makePage('archive/index.md')]),
-  makeSection('Classic Updates', [makePage('archive/classic-updates/release-channels.md')]),
+  makeSection('Archive', [makeGroup('Archive', [makePage('archive/index.md')])], {
+    expanded: true,
+  }),
+  makeSection(
+    'Classic Updates',
+    [
+      makeGroup('Classic Updates', [makePage('archive/classic-updates/introduction.md')]),
+      makeGroup('Guides', [
+        makePage('archive/classic-updates/configuring-updates.md'),
+        makePage('archive/classic-updates/preloading-and-caching-assets.md'),
+      ]),
+      makeGroup('Distribution', [
+        makePage('archive/classic-updates/advanced-release-channels.md'),
+        makePage('archive/classic-updates/hosting-your-app.md'),
+        makePage('archive/classic-updates/offline-support.md'),
+        makePage('archive/classic-updates/optimizing-updates.md'),
+        makePage('archive/classic-updates/release-channels.md'),
+      ]),
+      makeGroup('Workflow', [makePage('archive/classic-updates/publishing.md')]),
+      makeGroup('Bare Workflow', [makePage('archive/classic-updates/updating-your-app.md')]),
+    ],
+    {
+      expanded: true,
+    }
+  ),
 ];
 
 const featurePreview = [];

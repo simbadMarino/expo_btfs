@@ -225,4 +225,14 @@ const RENAMED_PAGES: Record<string, string> = {
 
   // Redirect Gatsby guide to index guides page
   '/guides/using-gatsby/': '/guides/',
+
+  // Classic updates moved to archive
+  '/distribution/release-channels/': '/archive/classic-updates/release-channels/',
+  '/distribution/advanced-release-channels/': '/archive/classic-updates/advanced-release-channels/',
+  '/distribution/optimizing-updates/': '/archive/classic-updates/optimizing-updates/',
+  '/eas-update/custom-updates-server/': '/distribution/custom-updates-server/',
+  '/guides/offline-support/': '/archive/classic-updates/offline-support/',
+  '/guides/preloading-and-caching-assets/':
+    '/archive/classic-updates/preloading-and-caching-assets/',
+  '/eas-update/bare-react-native/': '/bare/updating-your-app/',
 };
