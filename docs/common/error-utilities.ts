@@ -219,14 +219,12 @@ const RENAMED_PAGES: Record<string, string> = {
   '/versions/v43.0.0/sdk/permissions/': '/guides/permissions/',
   '/versions/latest/sdk/permissions/': '/guides/permissions/',
 
-  // updates
-  '/guides/configuring-ota-updates/': '/eas-update/getting-started/',
-  '/guides/configuring-updates/': '/eas-update/getting-started/',
-
   // Redirect Gatsby guide to index guides page
   '/guides/using-gatsby/': '/guides/',
 
   // Classic updates moved to archive
+  '/guides/configuring-ota-updates/': '/archive/classic-updates/getting-started/',
+  '/guides/configuring-updates/': '/archive/classic-updates/getting-started/',
   '/distribution/release-channels/': '/archive/classic-updates/release-channels/',
   '/distribution/advanced-release-channels/': '/archive/classic-updates/advanced-release-channels/',
   '/distribution/optimizing-updates/': '/archive/classic-updates/optimizing-updates/',
@@ -235,4 +233,5 @@ const RENAMED_PAGES: Record<string, string> = {
   '/guides/preloading-and-caching-assets/':
     '/archive/classic-updates/preloading-and-caching-assets/',
   '/eas-update/bare-react-native/': '/bare/updating-your-app/',
+  '/worfkflow/publishing/': '/archive/classic-updates/publishing/',
 };
