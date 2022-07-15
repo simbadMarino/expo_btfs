@@ -50,7 +50,7 @@ Because we no longer publish at build time, `postPublish` hooks in **app.json** 
 
 ### `Constants.manifest` does not include update related fields until updated
 
-Given that we no longer publish the app prior to builds, there is no update manifest available until the app has download an update. Usually this means that at least for the first launch of the app you won't have some fields available. If you are using `Constants.manifest` to access update fields, in particular `Constants.manifest.releaseChannel`, you should switch to `Updates.releaseChannel` instead.
+Given that we no longer publish the app prior to builds, there is no update manifest available until the app has download an update. Usually this means that at least for the first launch of the app you won't have some fields available. If you are using `Constants.manifest` to access update fields, in particular `Constants.manifest.channel`, you should switch to `Updates.channel` instead from the expo-updates library.
 
 ### `Constants.appOwnership` will be `null` in the resulting standalone app
 

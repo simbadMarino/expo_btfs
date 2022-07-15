@@ -118,7 +118,7 @@ After creating a secret, you can read it on subsequent EAS Build jobs with `proc
 
 Environment variables can be tricky to use if you don't have the correct mental model for how they work. In this section we're going to clarify common sources of confusion, oriented around use cases.
 
-### Can I share environment variables defined in eas.json with `expo start` and `expo publish`?
+### Can I share environment variables defined in eas.json with `expo start` and `eas update`?
 
 When you define environment variables on build profiles in **eas.json**, they will not be available for local development when you run `expo start`. A concern that developers often raise about this is that they now have to duplicate their configuration in multiple places, leading to additional maintenance effort and possible bugs when values go out of sync. If you find yourself in this situation, one possible solution is to move your configuration out of environment variables and into JavaScript. For example, imagine we had the following **eas.json**:
 
@@ -126,14 +126,14 @@ When you define environment variables on build profiles in **eas.json**, they wi
 {
   "build": {
     "production": {
-      "releaseChannel": "production",
+      "channel": "production",
       "env": {
         "API_URL": "https://api.production.com",
         "ENABLE_HIDDEN_FEATURES": 0
       }
     },
     "preview": {
-      "releaseChannel": "staging",
+      "channel": "staging",
       "env": {
         "API_URL": "https://api.staging.com",
         "ENABLE_HIDDEN_FEATURES": 1
@@ -185,7 +185,7 @@ The following are two possible alternative approaches, each with different trade
 
   </Collapsible>
 
-2. **Use a single environment variable to toggle configuration**. In our **eas.json** we can set an environment variable such as `APP_ENV` and then switch on that value inside of **app.config.js**. This way, we only have to be sure to set one environment variable: `APP_ENV=production expo publish`.
+2. **Use a single environment variable to toggle configuration**. In our **eas.json** we can set an environment variable such as `APP_ENV` and then switch on that value inside of **app.config.js**. This way, we only have to be sure to set one environment variable: `APP_ENV=production eas update`.
 
   <Collapsible summary="eas.json">
 
@@ -193,13 +193,13 @@ The following are two possible alternative approaches, each with different trade
     {
       "build": {
         "production": {
-          "releaseChannel": "production",
+          "channel": "production",
           "env": {
             "APP_ENV": "production"
           }
         },
         "preview": {
-          "releaseChannel": "staging",
+          "channel": "staging",
           "env": {
             "APP_ENV": "staging"
           }
