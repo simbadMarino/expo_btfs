@@ -141,12 +141,6 @@ class DocumentationPageWithApiVersion extends React.Component<Props, State> {
     );
   };
 
-  private isFeaturePreviewPath = () => {
-    return some(navigation.featurePreviewDirectories, name =>
-      this.props.router.pathname.startsWith(`/${name}`)
-    );
-  };
-
   private isPreviewPath = () => {
     return some(navigation.previewDirectories, name =>
       this.props.router.pathname.startsWith(`/${name}`)
@@ -193,8 +187,6 @@ class DocumentationPageWithApiVersion extends React.Component<Props, State> {
       return 'general';
     } else if (this.isGettingStartedPath()) {
       return 'starting';
-    } else if (this.isFeaturePreviewPath()) {
-      return 'featurePreview';
     } else if (this.isPreviewPath()) {
       return 'preview';
     } else if (this.isEasPath()) {
