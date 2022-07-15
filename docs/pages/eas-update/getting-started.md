@@ -71,7 +71,7 @@ This command will create a file named **eas.json**.
 
 The `channel` allows you to point updates at builds. For example, if we set up a GitHub Action to publish changes on merge, it will make it so that we can merge code into the "production" Git branch. Then, each commit will trigger a GitHub Action that will publish an update that will be available to builds with the channel "production".
 
-5. Optional: If your project is a bare React Native project, [read the doc](/eas-update/bare-react-native) on additional configuration you may need.
+5. Optional: If your project is a bare React Native project, [read the doc](/bare/updating-your-app) on additional configuration you may need.
 
 ## Create a build for the project
 

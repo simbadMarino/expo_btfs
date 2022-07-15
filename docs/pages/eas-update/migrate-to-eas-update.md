@@ -66,7 +66,7 @@ You'll need to make the following changes to your project:
 }
 ```
 
-6. Optional: If your project is a bare React Native project, [read the doc](/eas-update/bare-react-native) on extra configuration you may need.
+6. Optional: If your project is a bare React Native project, [read the doc](/bare/updating-your-app) on extra configuration you may need.
 
 ## Create new builds
 

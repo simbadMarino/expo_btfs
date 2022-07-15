@@ -129,6 +129,7 @@ redirects[distribution/optimizing-updates]=archive/classic-updates/optimizing-up
 redirects[eas-update/custom-updates-server]=distribution/custom-updates-server
 redirects[guides/offline-support]=archive/classic-updates/offline-support
 redirects[guides/preloading-and-caching-assets]=archive/classic-updates/preloading-and-caching-assets
+redirects[eas-update/bare-react-native]=bare/updating-your-app
 
 echo "::group::[5/6] Add custom redirects"
 for i in "${!redirects[@]}" # iterate over keys

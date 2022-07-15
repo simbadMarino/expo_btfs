@@ -322,7 +322,6 @@ const eas = [
         makePage('eas-update/eas-update-and-eas-cli.md'),
         makePage('eas-update/optimize-assets.md'),
         makePage('eas-update/migrate-to-eas-update.md'),
-        makePage('eas-update/bare-react-native.md'),
         makePage('eas-update/runtime-versions.md'),
         makePage('eas-update/environment-variables.md'),
         makePage('eas-update/expo-dev-client.md'),
