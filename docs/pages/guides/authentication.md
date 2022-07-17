@@ -2314,7 +2314,6 @@ Here are a few examples of some common redirect URI patterns you may end up usin
 https://auth.expo.io/@username/app-slug
 
 # Example
-
 https://auth.expo.io/@johnsample/my-app
 
 ```
