@@ -87,7 +87,7 @@ jobs:
         id: profile
         run: |
           DISPATCH_PROFILE="${{ github.event.inputs.buildType }}"
-          IS_VERSIONED=${{ steps.flavor.outputs.versioned }}
+          IS_VERSIONED="${{ steps.flavor.outputs.versioned }}"
           if [[ ! -z "$DISPATCH_PROFILE" ]]; then
             echo ::set-output name=profile::"$DISPATCH_PROFILE"
           elif [[ "$IS_VERSIONED" == "true" ]]; then
