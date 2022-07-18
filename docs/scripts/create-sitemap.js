@@ -57,7 +57,6 @@ function pathWithTrailingSlash(url) {
 }
 
 function pathWithStartingSlash(url) {
-  console.log({ url });
   return url.startsWith('/') ? url : `/${url}`;
 }
 
