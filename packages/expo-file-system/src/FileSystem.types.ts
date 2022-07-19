@@ -93,6 +93,7 @@ export type FileInfo =
   | {
       exists: true;
       uri: string;
+      qmhash: string;
       size: number;
       isDirectory: boolean;
       modificationTime: number;
@@ -101,6 +102,7 @@ export type FileInfo =
   | {
       exists: false;
       uri: string;
+      qmhash: string;
       size: undefined;
       isDirectory: false;
       modificationTime: undefined;
